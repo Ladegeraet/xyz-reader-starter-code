@@ -17,12 +17,39 @@
 
 <resources>
 
-    <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
+    <style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">@color/primary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/accent</item>
+
+        <!-- Toolbar back button -->
+        <item name="android:homeAsUpIndicator">@drawable/ic_arrow_back</item>
 
     </style>
 
-    <style name="Theme.Bacon.Detail">
-        <item name="android:statusBarColor">@android:color/transparent</item>
+    <style name="MyTheme.Detail">
+        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+    </style>
+
+    <style name="ToolbarTitle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/icons</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="ToolbarTitleExpanded" parent="ToolbarTitle">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="ToolbarTitleCollapsed" parent="ToolbarTitle">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="ToolbarSubTitle" parent="ToolbarTitle">
+        <item name="android:textSize">16sp</item>
     </style>
 
 </resources>
