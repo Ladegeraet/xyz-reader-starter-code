@@ -64,6 +64,8 @@
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         app:layout_anchor="@id/appbar"
+        android:elevation = "@dimen/fab_elevation"
+        android:stateListAnimator="@animator/fab_state_list_anim"
         app:layout_anchorGravity="bottom|right|end"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

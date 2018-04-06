@@ -9,4 +9,6 @@
 
     <string name="up">Up</string>
 
+    <string name="no_connection">Not online, not refreshing :(</string>
+
 </resources>
